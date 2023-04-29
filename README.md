@@ -28,7 +28,7 @@ ping <IP_Address> -I ppp0
 ```
 - To route specific traffic through VPN, use the command:
 ```shell
-ip route add <IP_Addresses> dev ppp0
+ip route add <IP_Mask> dev ppp0
 ```
 >e.g ip route add 192.168.10.0/24 dev ppp0 routes all traffic to IPs 192.168.10.* through the VPN.
 
